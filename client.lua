@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         local ped = PlayerPedId()
-		local plyCoords = GetEntityCoords(PlayerPedId(), 0)
+	local plyCoords = GetEntityCoords(PlayerPedId(), 0)
         local startLocationdistance = #(vector3(startLocation.x, startLocation.y, startLocation.z) - plyCoords)
         if startLocationdistance < 10 then
             DrawMarker(25, startLocation.x, startLocation.y, startLocation.z-0.97, 0, 0, 0, 0, 0, 0, 1.0,1.0,0.8, 55, 90, 169, 214, 0, 0, 2, 0, 0, 0, 0)
